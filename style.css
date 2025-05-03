@@ -741,6 +741,125 @@ span{
     }
 }
 
+/* signUp page */
+.signUp-page,
+.log-in{
+    width: 100%;
+    justify-content: end;
+    height: 100vh;
+
+    .logo{
+        justify-content: center;
+        align-items: center;
+        width: 60%;
+        height: 100%;
+        background: var(--black-color);
+        img{
+            width: 100%;
+        }
+        
+    }
+
+    .line{
+        height: 100%;
+        width: .7rem;
+        background: var(--main-color);
+    }
+
+    .img{
+        height: 100%;
+        width: 60%;
+        justify-content: center;
+        background: var(--white-color);
+        color: var(--black-color);
+        flex-wrap: nowrap;
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+        
+        h1{
+            font-size: 1.7rem;
+            color: var(--main-color);
+            font-weight: 600;
+            width: 40%;
+        }
+
+        form{
+            text-align: start;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            height: 70%;
+            width: 90%;
+
+            .box{
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+                justify-content: start;
+                gap: 10px;
+
+                input{
+                    width: 100%;
+                    height: 3rem;
+                    border-radius: .3rem;
+                    -webkit-border-radius: .3rem;
+                    -moz-border-radius: .3rem;
+                    -ms-border-radius: .3rem;
+                    -o-border-radius: .3rem;
+                    border:.1rem solid var(--main-color);
+                    margin-bottom: 10px;
+                }
+            }
+
+            .btns{
+                flex-direction: column;
+                justify-content: center;
+                width: 50%;
+                height: 30%;
+                text-align: center;
+                gap: 10px;
+                
+                .btn{
+                    cursor: pointer;
+                    background: var(--white-color);
+                    border: .1px solid var(--second-color);
+                    width: 100%;
+                    height: 3rem;
+                    padding: 0rem 1rem;
+                    justify-content: space-around;
+                    text-align: center;
+                    color: var(--black-color);
+                    border-radius: .3rem;
+                    -webkit-border-radius: .3rem;
+                    -moz-border-radius: .3rem;
+                    -ms-border-radius: .3rem;
+                    -o-border-radius: .3rem;
+                }
+    
+                .login{
+                    width: 100%;
+    
+                    p{
+                        font-size: .8rem;
+                        width: 100%;
+                        color: var(--main-color);
+    
+                        span{
+                            color: var(--main-color);
+                            font-size: .8rem;
+                            width: 100%;
+                            cursor: pointer;
+                        }
+                    }
+    
+                }
+            }
+        }
+    }
+}
+
+
 /* media */
 @media screen and (max-width:1000px) {
 
@@ -1041,12 +1160,76 @@ span{
 
     /* welcomePage */
     .welcome-page{
-        /* height: 100%; */
             .img{
             width: 100%;
             
         }
     }
 
+    /* sign up */
+
+    .signUp-page,
+    .log-in {
+        flex-direction: column;
+        .logo{
+            width: 100%;
+        }
+        .line {
+           height: 1rem;
+            width: 100%;
+        }
+
+        .img{
+            width: 100%;
+
+            h1{
+                font-size: 2.4rem;
+            }
+
+            form{
+                height: 80%;
+
+                .box{
+                    width: 60%;
+
+                    label{
+                        font-size: 1.8rem;
+                    }
+
+                    input{
+                        height: 4rem;
+                    }
+                }
+
+                .btns{
+                    width: 60%;
+                    .btn{
+                        height: 4rem;
+                        span{
+                            font-size: 2.4rem;
+                        }
+                    }
+
+                    .login{
+                        p{
+                            font-size: 1.7rem;
+                            span{
+                                color: var(--main-color);
+                                font-size: 1.7rem;
+                                width: 100%;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        
+
+        
+    }
 }
+
+
 
