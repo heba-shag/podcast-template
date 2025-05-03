@@ -638,6 +638,109 @@ span{
     }
 }
 
+
+
+/* welcome page */
+.welcome-page{
+    background-image: url('/media/e5994c8c12e659f134a1923bcc69c1abd12eaa7e.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.9);
+    width: 100%;
+    justify-content: end;
+    height: 100vh;
+
+    .img{
+        height: 100%;
+        width: 60%;
+        justify-content: center;
+        background: var(--black-color);
+        color: var(--white-color);
+        flex-wrap: nowrap;
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+
+        h1{
+            font-size: 1.3rem;
+            font-weight: 500;
+            width: 25%;
+        }
+
+        p{
+            font-size: 1rem;
+            width: 40%;
+
+            span{
+                font-size: 1rem;
+                color: var(--second-color);
+            }
+        }
+
+        .btns{
+            flex-direction: column;
+            justify-content: center;
+            width: 30%;
+            height: 30%;
+            text-align: center;
+            gap: 10px;
+            
+            .btn{
+                cursor: pointer;
+                background: var(--white-color);
+                border: .1px solid var(--second-color);
+                width: 100%;
+                height: 3rem;
+                padding: 0rem 1rem;
+                justify-content: space-around;
+                text-align: center;
+                color: var(--black-color);
+                border-radius: .3rem;
+                -webkit-border-radius: .3rem;
+                -moz-border-radius: .3rem;
+                -ms-border-radius: .3rem;
+                -o-border-radius: .3rem;
+                span{
+                    font-size: 1.1rem;
+                }
+            }
+
+            .login{
+                width: 100%;
+
+                p{
+                    font-size: .8rem;
+                    width: 100%;
+
+                    span{
+                        color: var(--main-color);
+                        font-size: .8rem;
+                        width: 100%;
+                        cursor: pointer;
+                    }
+                }
+
+                
+            }
+        }
+    }
+
+    .conditions{
+        width: 60%;
+        justify-content: center;
+        margin: 1rem;
+        text-align: center;
+
+        p{
+            font-size: .6rem;
+            a{
+                color: var(--main-color);
+            }
+        }
+    }
+}
+
 /* media */
 @media screen and (max-width:1000px) {
 
@@ -933,6 +1036,16 @@ span{
 
     .aboutUs-section,.footer-section{
         display: none;
+    }
+
+
+    /* welcomePage */
+    .welcome-page{
+        /* height: 100%; */
+            .img{
+            width: 100%;
+            
+        }
     }
 
 }
