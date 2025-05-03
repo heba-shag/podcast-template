@@ -2,37 +2,607 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap">
+
     <link rel="stylesheet"  href="style.css">
     <title>Podacst</title>
 </head>
 <body>
+        
+    <!-- landing page -->
+    <div>
 
-     <!-- <div class="huge-container flex"> -->
-
-        <!-- home page -->
-        <div class="section home-section">
-            <div class="navbar flex">
-                <div class="logo">
+        <!-- navbar -->
+        <div class="navbar flex">
+            <div class="logo flex">
+                <img src="/media/Logo.png" alt="">
+            </div>
     
+            <div class="links flex">
+                <li class="link flex"><span class="fas fa-compass"></span><a href="">Discover</a></li>
+                <li class="link flex"><span class=" far fa-comments"></span><a href="">Community</a></li>
+                <li class="link flex"><span class="fas fas fa-book"></span><a href="">Library</a></li>
+                <li class="link flex profile"><span class="fas far fa-user"></span><a href="">Profile</a></li>
+                <li class="link flex about"><a href="">About</a></li>
+                <li class="link flex contact"><a href="">Contact</a></li>    
+            </div>
+    
+            <div class="search flex">
+                <li class="fas fa-search icon"></li>
+                <button class="btn" ><a href="logIn">Log in</a></button>
+                <!-- <h2 class="user-name">Anna Liebert</h2>
+                <img src="" alt=""> -->
+            </div>
+        </div>
+    
+        <!-- welcome section -->
+        <div class="home-section section">
+    
+            <div class="welcome-section flex">
+                <div class="flex description">
+                    <div class="img">
+                        <img src="/media/homePage.png" alt="">
+                    </div>
+    
+                    <div class="text-description">
+                        <h1>John Doe Experience</h1>
+    
+                        <p>Podcast Description
+                            <br>
+                        Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+                        </p>
+    
+                        <div class="list flex">
+                            <p>Educational</p>
+                            <p>Entertainment</p>
+                            <p>Slice of Live</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+    
+            <div class="swiper-container flex">
+                <div class="swiper flex">
+                    <span style="color: #f65c2a">•</span>
+                    <span>•</span>
+                    <span>•</span>
+                    <span>•</span>
+                    <span>•</span>
+                    <span>•</span>
+                    <span>•</span>
                 </div>
     
-                <div class="links">
+                
+            </div>
     
-                </div>
-    
-                <div class="search">
+            <div class="quick-links-container flex">
+                <div class="quick-links flex">
+                    <div class="link-container flex"><li class="  fas fa-th-large"></li><span>Categories</span></div>
+                    <div class="link-container flex"><li class=" fas fa-book-open"></li><span>Audiobook</span></div>
+                    <div class="link-container flex"><li class="fas fa-globe"></li><span>Network</span></div>
     
                 </div>
             </div>
+        </div>
     
-            <div class="welcome-section flex">
+        <!-- trendy section -->
+        <div class="trendy-section section flex">
+            <div class="header flex">
+                <h2 class="title">Trendy Shows</h2>
+                <h3 class="more"><li class="fas fas fa-chevron-right"></li><span>More</span></h3>
+            </div>
+    
+            <div class="cards-container flex">
+                <div class="card">
+                    <img src="/media/13ee52bcd851ae74b7abf2cc415363dac71bc160.jpg" alt="">
+                    <h2>Not alone</h2>
+                    <p>Podcast Description Lorem ipsum dolor sit amet</p>
+                </div>
+    
+                <div class="card">
+                    <img src="/media/4f2ac475f6e34f45c2e676558da7dd48ba7fe9ce.jpg" alt="">
+                    <h2>MM&M</h2>
+                    <p>Podcast Description Lorem ipsum dolor sit amet</p>
+                </div>
+    
+                <div class="card">
+                    <img src="/media/f7ac55657216297b97748de9e1869baa20101bea.jpg" alt="">
+                    <h2>The SIP</h2>
+                    <p>Podcast Description Lorem ipsum dolor sit amet</p>
+                </div>
+    
+                <div class="card">
+                    <img src="/media/73a4e89e57aa99dc0fd08882597575401b3e192c.png" alt="">
+                    <h2>Family Business</h2>
+                    <p>Podcast Description Lorem ipsum dolor sit amet</p>
+                </div>
+    
+                <div class="card">
+                    <img src="/media/53c2d26402d321c820b7e06240b501ea05661961.jpg" alt="">
+                    <h2>On Purpose</h2>
+                    <p>Podcast Description Lorem ipsum dolor sit amet</p>
+                </div>
+    
+                <div class="card">
+                    <img src="/media/81d6668560cb1e609643ba1555bb00502f8d6962.jpg" alt="">
+                    <h2>Shane Dawson Pod </h2>
+                    <p>Podcast Description Lorem ipsum dolor sit amet</p>
+                </div>
+    
+                <div class="card">
+                    <img src="/media/b8769eb6aef78f9ea5d4e6bba3c3df0cdc7ac7dd.jpg" alt="">
+                    <h2>Startalk</h2>
+                    <p>Podcast Description Lorem ipsum dolor sit amet</p>
+                </div>
+    
+                <div class="card">
+                    <img src="/media/dae2a0bf4cf8890a78d7d094798be6e89c7d8a8d.jpg" alt="">
+                    <h2>The Album Years</h2>
+                    <p>Podcast Description Lorem ipsum dolor sit amet</p>
+                </div>
+    
+                <div class="card">
+                    <img src="/media/375e4901692a28078fad9f84bd3f4fcd2d41a096.png" alt="">
+                    <h2>Ear Hustle</h2>
+                    <p>Podcast Description Lorem ipsum dolor sit amet</p>
+                </div>
+    
+                <div class="card">
+                    <img src="/media/bcbf6e2d4470a4b1bdddfc0c251395847f355654.jpg" alt="">
+                    <h2>That Sounds Fun</h2>
+                    <p>Podcast Description Lorem ipsum dolor sit amet</p>
+                </div>
+            </div>
+        </div>
+    
+        <!-- top picks section -->
+        <div class="top-picks-section section flex">
+            <div class="header flex">
+                <h2 class="title">Top Picks</h2>
+                <h3 class="more"><li class="fas fas fa-chevron-right"></li><span>More</span></h3>
+            </div>
+    
+            <div class="cards-container flex">
+                <div class="card flex">
+                    <img src="/media/e31e56bb26eb03a699ac8e4ea41fd11a740175e7.jpg" alt="">
+                    <div class="text-container">
+                        <h2>Want to be irresistible?</h2>
+                        <p>Becoming Her is a refreshing, empowering podcast for women on the journey of growth and self-discovery. </p>
+                    </div>
+                </div>
+    
+                <div class="card flex">
+                    <img src="/media/79f237da92fdf400f628f5c625d1956a386b23e2.jpg" alt="">
+                    <div class="text-container">
+                        <h2>Enrich your history knowledge</h2>
+                        <p>Taking a look at the origins of the United States' relationship with Iraq before and during the Cold War</p>
+                    </div>
+                </div>
+    
+                <div class="card flex">
+                    <img src="/media/4f2ac475f6e34f45c2e676558da7dd48ba7fe9ce.jpg" alt="">
+                    <div class="text-container">
+                        <h2>How To Change your life??</h2>
+                        <p>Discover practical steps and inspiring insights to transform your life--one decision at atime.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- ads section -->
+        <div class="ads-section section flex">
+            <img src="/media/2601d9e85c971bd214d4a72ba6dd0ba9a0846f85.png" alt="">
+            <img src="/media/97b39bf0216d4f2925bf4734dd51e22475db34f8.png" alt="">
+        </div>
+    
+        <!-- education section -->
+        <div class="education-section section flex">
+            <div class="header flex">
+                <h2 class="title">Education</h2>
+                <h3 class="more"><li class="fas fas fa-chevron-right"></li><span>More</span></h3>
+            </div>
+    
+            <div class="cards-container flex">
+                <div class="card">
+                    <img src="/media/53c2d26402d321c820b7e06240b501ea05661961.jpg" alt="">
+                    <h2>On Purpose</h2>
+                    <p>Podcast Description Lorem ipsum dolor sit amet</p>
+                </div>
+    
+                <div class="card">
+                    <img src="/media/bcbf6e2d4470a4b1bdddfc0c251395847f355654.jpg" alt="">
+                    <h2>It Gets Interesting</h2>
+                    <p>Podcast Description Lorem ipsum dolor sit amet</p>
+                </div>
+    
+                <div class="card">
+                    <img src="/media/d0b20d3822e749a0dbd046982474baf2e85cb615.jpg" alt="">
+                    <h2>The ADHD Adult Pod</h2>
+                    <p>Podcast Description Lorem ipsum dolor sit amet</p>
+                </div>
+    
+                <div class="card">
+                    <img src="/media/79f237da92fdf400f628f5c625d1956a386b23e2.jpg" alt="">
+                    <h2>BlowBack</h2>
+                    <p>Podcast Description Lorem ipsum dolor sit amet</p>
+                </div>
+    
+                <div class="card">
+                    <img src="/media/b8769eb6aef78f9ea5d4e6bba3c3df0cdc7ac7dd.jpg" alt="">
+                    <h2>Startalk</h2>
+                    <p>Podcast Description Lorem ipsum dolor sit amet</p>
+                </div>
+    
+                <div class="card">
+                    <img src="/media/13ee52bcd851ae74b7abf2cc415363dac71bc160.jpg" alt="">
+                    <h2>Not alone</h2>
+                    <p>Podcast Description Lorem ipsum dolor sit amet</p>
+                </div>
+    
+                <div class="card">
+                    <img src="/media/e31e56bb26eb03a699ac8e4ea41fd11a740175e7.jpg" alt="">
+                    <h2>Being HER </h2>
+                    <p>Podcast Description Lorem ipsum dolor sit amet</p>
+                </div>
+    
+                <div class="card">
+                    <img src="/media/81d6668560cb1e609643ba1555bb00502f8d6962.jpg" alt="">
+                    <h2>Self-Love Podcast</h2>
+                    <p>Podcast Description Lorem ipsum dolor sit amet</p>
+                </div>
+    
+                <div class="card">
+                    <img src="/media/dae2a0bf4cf8890a78d7d094798be6e89c7d8a8d.jpg" alt="">
+                    <h2>Empowered Principal</h2>
+                    <p>Podcast Description Lorem ipsum dolor sit amet</p>
+                </div>
+    
+                <div class="card">
+                    <img src="/media/375e4901692a28078fad9f84bd3f4fcd2d41a096.png" alt="">
+                    <h2>How to Build this</h2>
+                    <p>Podcast Description Lorem ipsum dolor sit amet</p>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Entertainment section  -->
+        <div class="entertainment-section section flex">
+            <div class="header flex">
+                <h2 class="title">Entertainment</h2>
+                <h3 class="more"><li class="fas fas fa-chevron-right"></li><span>More</span></h3>
+            </div>
+    
+            <div class="cards-container flex">
+                <div class="card">
+                    <img src="/media/f7ac55657216297b97748de9e1869baa20101bea.jpg" alt="">
+                    <h2>The SIP</h2>
+                    <p>Podcast Description Lorem ipsum dolor sit amet</p>
+                </div>
+    
+                <div class="card">
+                    <img src="/media/4f2ac475f6e34f45c2e676558da7dd48ba7fe9ce.jpg" alt="">
+                    <h2>MMM Podcast </h2>
+                    <p>Podcast Description Lorem ipsum dolor sit amet</p>
+                </div>
+    
+                <div class="card">
+                    <img src="/media/55960bb9fef0219677b7f7729e9614e79d782940.png" alt="">
+                    <h2>The rest is Entert...</h2>
+                    <p>Podcast Description Lorem ipsum dolor sit amet</p>
+                </div>
+    
+                <div class="card">
+                    <img src="/media/c98dc4b5db80e29d60e60ccb3c28f9b1ceb522b6.png" alt="">
+                    <h2>Cest la Tea!</h2>
+                    <p>Podcast Description Lorem ipsum dolor sit amet</p>
+                </div>
+    
+                <div class="card">
+                    <img src="/media/81d6668560cb1e609643ba1555bb00502f8d6962.jpg" alt="">
+                    <h2>Shane Dawson Pod</h2>
+                    <p>Podcast Description Lorem ipsum dolor sit amet</p>
+                </div>
+    
+                <div class="card">
+                    <img src="/media/e0801007307ca2b94fd7bc82597a401c1811272d.jpg" alt="">
+                    <h2>Album Podcast</h2>
+                    <p>Podcast Description Lorem ipsum dolor sit amet</p>
+                </div>
+    
+                <div class="card">
+                    <img src="/media/8c09b0fb9b075b963e1260dce9f38dc2dbf1519e.jpg" alt="">
+                    <h2>Call Her Daddy</h2>
+                    <p>Podcast Description Lorem ipsum dolor sit amet</p>
+                </div>
+    
+                <div class="card">
+                    <img src="/media/dae2a0bf4cf8890a78d7d094798be6e89c7d8a8d.jpg" alt="">
+                    <h2>Music years</h2>
+                    <p>Podcast Description Lorem ipsum dolor sit amet</p>
+                </div>
+    
+                <div class="card">
+                    <img src="/media/d0b20d3822e749a0dbd046982474baf2e85cb615.jpg" alt="">
+                    <h2>Fun Dad Dean</h2>
+                    <p>Podcast Description Lorem ipsum dolor sit amet</p>
+                </div>
+    
+                <div class="card">
+                    <img src="/media/b18b5d1e4552b034214cafd41d6452d4fee6b12e.png" alt="">
+                    <h2>Party Fun</h2>
+                    <p>Podcast Description Lorem ipsum dolor sit amet</p>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Audiobooks section -->
+        <div class="audiobooks-section section flex">
+    
+            <div class="header flex">
+                <h2 class="title">Audiobooks</h2>
+                <h3 class="more"><li class="fas fas fa-chevron-right"></li><span>More</span></h3>
+            </div>
+    
+            <div class="cards-container flex">
+    
+                <div class="row1 flex">
+                    <div class="card flex">
+                        <img src="/media/e31e56bb26eb03a699ac8e4ea41fd11a740175e7.jpg" alt="">
+                        <div class="text-container">
+                            <h2>Broken Country</h2>
+                            <p>Audiobook Description Lorem ipsum dolor sit amet </p>
+                            <ul>
+                                <li>Family Life</li>
+                                <li>Slice of Life</li>
+                                <li>Historical Fiction</li>
+                            </ul>
+                        </div>
+                        <li class=" far fa-heart"></li>
+                    </div>
+        
+                    <div class="card flex">
+                        <img src="/media/c98dc4b5db80e29d60e60ccb3c28f9b1ceb522b6.png" alt="">
+                        <div class="text-container">
+                            <h2>Ayoade on Top</h2>
+                            <p>Audiobook Description Lorem ipsum dolor sit amet </p>
+                            <ul>
+                                <li>Film</li>
+                                <li>Performing Arts</li>
+                                <li>Comedy</li>
+                            </ul>
+                        </div>
+                        <li class=" far fa-heart"></li>
+                    </div>
+        
+                    <div class="card flex">
+                        <img src="/media/bcbf6e2d4470a4b1bdddfc0c251395847f355654.jpg" alt="">
+                        <div class="text-container">
+                            <h2>Atomic Habits</h2>
+                            <p>Audiobook Description Lorem ipsum dolor sit amet </p>
+                            <ul>
+                                <li>Self-Help</li>
+                                <li>Personal Growth</li>
+                                <li>Psychology</li>
+                            </ul>
+                        </div>
+                        <li class=" far fa-heart"></li>
+                    </div>
+        
+                    <div class="card flex">
+                        <img src="/media/b8769eb6aef78f9ea5d4e6bba3c3df0cdc7ac7dd.jpg" alt="">
+                        <div class="text-container">
+                            <h2>The Women</h2>
+                            <p>Audiobook Description Lorem ipsum dolor sit amet </p>
+                            <ul>
+                                <li>Historical Fiction</li>
+                                <li>Coming of age</li>
+                                <li>War</li>
+                            </ul>
+                        </div>
+                        <li class=" far fa-heart"></li>
+                    </div>
+                </div>
+                
+    
+                <div class="row2 flex">
+                    <div class="card flex">
+                        <img src="/media/55960bb9fef0219677b7f7729e9614e79d782940.png" alt="">
+                        <div class="text-container">
+                            <h2>Where the Crawdads Sing</h2>
+                            <p>Audiobook Description Lorem ipsum dolor sit amet </p>
+                            <ul>
+                                <li>Fiction</li>
+                                <li>Coming of Age</li>
+                                <li>Mystery</li>
+                            </ul>
+                        </div>
+                        <li class="fas fa-heart"></li>
+                    </div>
+        
+                    <div class="card flex">
+                        <img src="/media/53c2d26402d321c820b7e06240b501ea05661961.jpg" alt="">
+                        <div class="text-container">
+                            <h2>I'm Glad My Mom Died</h2>
+                            <p>Audiobook Description Lorem ipsum dolor sit amet </p>
+                            <ul>
+                                <li>Family</li>
+                                <li>Relationships</li>
+                                <li>Slice of Life</li>
+                            </ul>
+                        </div>
+                        <li class="fas fa-heart"></li>
+                    </div>
+        
+                    <div class="card flex">
+                        <img src="/media/e31e56bb26eb03a699ac8e4ea41fd11a740175e7.jpg" alt="">
+                        <div class="text-container">
+                            <h2>The Dutch House</h2>
+                            <p>Audiobook Description Lorem ipsum dolor sit amet </p>
+                            <ul>
+                                <li>Family Life</li>
+                                <li>Coming of Age</li>
+                                <li>Historical Fiction</li>
+                            </ul>
+                        </div>
+                        <li class="fas fa-heart"></li>
+                    </div>
+        
+                    <div class="card flex">
+                        <img src="/media/b18b5d1e4552b034214cafd41d6452d4fee6b12e.png" alt="">
+                        <div class="text-container">
+                            <h2>The Davenports</h2>
+                            <p>Audiobook Description Lorem ipsum dolor sit amet </p>
+                            <ul>
+                                <li>Romance</li>
+                                <li>Historical Fiction</li>
+                                <li>Young Adult</li>
+                            </ul>
+                        </div>
+                        <li class="fas fa-heart"></li>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    
+        <!-- Business section -->
+        <div class="business-section section flex">
+            <div class="header flex">
+                <h2 class="title">Business</h2>
+                <h3 class="more"><li class="fas fas fa-chevron-right"></li><span>More</span></h3>
+            </div>
+    
+            <div class="cards-container flex">
+                <div class="card">
+                    <img src="/media/f7ac55657216297b97748de9e1869baa20101bea.jpg" alt="">
+                    <h2>Womans Business</h2>
+                    <p>Podcast Description Lorem ipsum dolor sit amet</p>
+                </div>
+    
+                <div class="card">
+                    <img src="/media/13ee52bcd851ae74b7abf2cc415363dac71bc160.jpg" alt="">
+                    <h2>The Edie Podcast</h2>
+                    <p>Podcast Description Lorem ipsum dolor sit amet</p>
+                </div>
+    
+                <div class="card">
+                    <img src="/media/73a4e89e57aa99dc0fd08882597575401b3e192c.png" alt="">
+                    <h2>Destress Ur Business</h2>
+                    <p>Podcast Description Lorem ipsum dolor sit amet</p>
+                </div>
+    
+                <div class="card">
+                    <img src="/media/4f2ac475f6e34f45c2e676558da7dd48ba7fe9ce.jpg" alt="">
+                    <h2>Business Noodles</h2>
+                    <p>Podcast Description Lorem ipsum dolor sit amet</p>
+                </div>
+    
+                <div class="card">
+                    <img src="/media/81d6668560cb1e609643ba1555bb00502f8d6962.jpg" alt="">
+                    <h2>Business Wars</h2>
+                    <p>Podcast Description Lorem ipsum dolor sit amet</p>
+                </div>
+    
+                <div class="card">
+                    <img src="/media/b8769eb6aef78f9ea5d4e6bba3c3df0cdc7ac7dd.jpg" alt="">
+                    <h2>My First Million</h2>
+                    <p>Podcast Description Lorem ipsum dolor sit amet</p>
+                </div>
+    
+                <div class="card">
+                    <img src="/media/53c2d26402d321c820b7e06240b501ea05661961.jpg" alt="">
+                    <h2>We Study Billionaires</h2>
+                    <p>Podcast Description Lorem ipsum dolor sit amet</p>
+                </div>
+    
+                <div class="card">
+                    <img src="/media/375e4901692a28078fad9f84bd3f4fcd2d41a096.png" alt="">
+                    <h2>Family Business</h2>
+                    <p>Podcast Description Lorem ipsum dolor sit amet</p>
+                </div>
+    
+                <div class="card">
+                    <img src="/media/dae2a0bf4cf8890a78d7d094798be6e89c7d8a8d.jpg" alt="">
+                    <h2>Sales Logic Podcast</h2>
+                    <p>Podcast Description Lorem ipsum dolor sit amet</p>
+                </div>
+    
+                <div class="card">
+                    <img src="/media/bcbf6e2d4470a4b1bdddfc0c251395847f355654.jpg" alt="">
+                    <h2>Good Business</h2>
+                    <p>Podcast Description Lorem ipsum dolor sit amet</p>
+                </div>
+            </div>
+        </div>
+    
+        <!-- About us section -->
+        <div class="aboutUs-section section flex">
+            <div class="header flex">
+                <h2 class="title">About Us</h2>
+            </div>
+    
+            <div class="cards-container flex">
+                <p>
+                    Welcome to Static and Signal, your go-to destination for all things 
+                    podcasts! We are passionate about the art of storytelling and the 
+                    power of audio to connect, inform, and entertain. Our mission is to 
+                    curate a diverse range of podcasts that resonate with listeners from 
+                    all walks of life.
+                    <br>
+                    At Static and Signal, we believe that every voice deserves to be 
+                    heard. Whether you re a podcast enthusiast or just starting your 
+                    audio journey, our platform offers a carefully selected collection of 
+                    shows across various genres, including true crime, comedy, 
+                    technology, and personal development.
+                </p>
+                <div class="img flex">
+                    <li class="fas fa-play-circle"></li>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Footer -->
+        <div class="footer-section flex">
+            <div class="logo flex">
+                <img src="/media/Logo.png" alt="">
+            </div>
+    
+            <div class="links">
+                <div class="navLinks flex">
+                    <li>About</li>
+                    <li>Categories</li>
+                    <li>Career</li>
+    
+                </div>
+                <div class="aboutLinks flex">
+                    <li>Pricing</li>
+                    <li>Bolg</li>
+                    <li>App Available on:</li>
+                    
+                </div>
+    
+                <div class="onLinks flex">
+                    <li style="color: red;" class="fas fab fa-google-play"></li>
+                    <li style="color: aqua;" class="fas fab fa-app-store"></li>
+                    
+                </div>
+            </div>
+    
+            <div class="apps-logos flex">
+                <li  class="fas fa-podcast">Google Podcast</li>
+                <li style="color:green" class="fas fab fa-spotify">Spotify</li>
+                <li style="color:red" class="fas fas fab fa-youtube">Youtube</li>
     
             </div>
         </div>
-     <!-- </div> -->
-    
+    </div>
+
+    <div id="logIn">
+        
+    </div>
     
 </body>
 </html>
