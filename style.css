@@ -148,7 +148,7 @@ span{
 .home-section{
     position: relative;
     width: 100%;
-    background-image: url('/media/9b30f2ea61a29ad6f18170d64f31f6136c8ca0cb.png');
+    background-image: url('media/9b30f2ea61a29ad6f18170d64f31f6136c8ca0cb.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -572,7 +572,7 @@ span{
         }  
     
         .img{
-            background-image: url('/media/Logo.png');
+            background-image: url('media/Logo.png');
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
@@ -663,7 +663,7 @@ span{
 
 /* welcome page */
 .welcome-page{
-    background-image: url('/media/e5994c8c12e659f134a1923bcc69c1abd12eaa7e.jpg');
+    background-image: url('media/e5994c8c12e659f134a1923bcc69c1abd12eaa7e.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -886,7 +886,7 @@ span{
 .personal-page{
     overflow: hidden;
     justify-content: center;
-    background-image: url('/media/Meta-3__FillWzgwMCw0NTBd.jpg');
+    background-image: url('media/Meta-3__FillWzgwMCw0NTBd.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
