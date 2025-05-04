@@ -571,6 +571,11 @@ span{
             -ms-border-radius: 2rem;
             -o-border-radius: 2rem;
             -webkit-filter: blur(3px);
+
+            li{
+                font-size: 3rem;
+                color: orange;
+            }
         }
     }
     
@@ -598,7 +603,7 @@ span{
     }
 
     .links{
-        width: 35%;
+        width:85%;
         list-style: none;
         flex-wrap: wrap;
 
@@ -661,11 +666,13 @@ span{
         flex-direction: column;
         gap: 20px;
         text-align: center;
-
+        img{
+            width: 40%;
+        }
         h1{
             font-size: 1.3rem;
             font-weight: 500;
-            width: 25%;
+            width: 30%;
         }
 
         p{
@@ -682,7 +689,7 @@ span{
             flex-direction: column;
             justify-content: center;
             width: 30%;
-            height: 30%;
+            height: 40%;
             text-align: center;
             gap: 10px;
             
@@ -702,7 +709,7 @@ span{
                 -ms-border-radius: .3rem;
                 -o-border-radius: .3rem;
                 span{
-                    font-size: 1.1rem;
+                    font-size: .8;
                 }
             }
 
@@ -875,294 +882,54 @@ span{
         .navbar{
             .links{
                 width: 50%;
+                
             }
         }
     }
 }
 
 
-@media screen and (max-device-width:450px){ 
-
-
-    .home-section{
-        height: fit-content;
-        .welcome-section,.swiper-container{
-            background: red!important;
-            display: none;
-        }
-
-        .quick-links-container{
-            height: 12rem;
-            position: fixed;
-            z-index: 1010;
-            top: 0;
-            right: 0;
-            left: 0;
-            width: 100%;
-        
-            .quick-links{
-                border-bottom-left-radius: 4rem!important;
-                border-bottom-right-radius: 4rem!important;
-                border-top-right-radius: 0!important;
-                border-top-left-radius: 0!important;
-                height: 100%;
-                width: 100%;
-                justify-content: space-evenly;
-
-                .link-container{
-                    li{
-                        font-size: 3.5rem;
-                    }
-
-                    span{
-                        font-size: 1.5rem;
-                    }
-                }
-
-            }
-        }
-
-        
-    }
-
+@media screen and (max-device-width:550px){ 
+    
     .navbar{
+        .logo{
+            width: 30%;
+        }
 
-        height: 10rem;
-        top: 80%!important;
-        position: fixed;
-        z-index: 1010;
-        background: var(--white-color);
-        border-top-right-radius: 4rem;
-        border-top-left-radius: 4rem;
-        box-shadow: 2px 2px 20px #ddd;
-        border-bottom-left-radius: 0;
-        border-bottom-right-radius: 0;
+        .links{
+            display: none;
+            
+        }
+    }
 
-        .search,.logo{
+    .aboutUs-section{
+        p{
+            overflow: auto;
+        }
+    }
+
+    .footer-section{
+        .logo{
+            width:40% ;
+        }
+
+        .links{
             display: none;
         }
-        .links{
-            justify-content: space-evenly;
-            width: 100%;
-            .link{
-                font-size: 2rem;
-                color: var(--black-color)!important;
-                text-align: center;
-                flex-wrap: wrap;
-                justify-content: center;
-
-                a{
-                    color: var(--black-color)!important;
-                }
-
-                span{
-                    width: 100%;
-                    font-size: 2rem;
-                    display: block;
-                }
-            }
-
-            .profile{
-                display: block;
-            }
-
-            .about,.contact{
-                display: none;
-            }
-        }
-    }
-
-    .trendy-section,
-    .top-picks-section,
-    .education-section,
-    .entertainment-section,
-    .audiobooks-section,
-    .business-section{
-        .header{
-            justify-content: start;
-            .title{
-                font-size: 2rem;
-            }
-
-            .more{
-                margin-left: 1rem;
-
-                span{
-                    display: none;
-                }
-
-                li{
-                    font-size: 2rem;
-                    display: block;
-                }
-            }
-        }
-    }
-
-    .trendy-section{
-        height: 50%;
-        margin-top: 14rem ;
-        .cards-container{
-            height: 43rem;
-            .card{
-                border-radius: 10px;
-                -webkit-border-radius: 10px;
-                -moz-border-radius: 10px;
-                -ms-border-radius: 10px;
-                -o-border-radius: 10px;
-                width: 60%;
-                height: 100%;
-                padding: 1.4rem;
-                background: #ddd;
-
-                h2{
-                    font-size: 2rem;
-                    font-weight: 700;
-                }
-
-                p{
-                    font-size: 1.6rem;
-                }
-
-            }
-        }
-    }
-
-    .top-picks-section{
-        height: 40rem;
-        .cards-container{
-            overflow: auto;
-            height: 35rem;
-            flex-wrap: wrap;
-            justify-content: center;
-            
-            .card{
-                height: 40%;
-                border-radius: 2.5rem;
-                -webkit-border-radius: 2.5rem;
-                -moz-border-radius: 2.5rem;
-                -ms-border-radius: 2.5rem;
-                -o-border-radius: 2.5rem;
-                width: 100%;
-
-                img{
-                    width: 26%;
-                    object-fit: fill;
-                    height: 100%;
-                    border-radius: 2.5rem;
-                    -webkit-border-radius: 2.5rem;
-                    -moz-border-radius: 2.5rem;
-                    -ms-border-radius: 2.5rem;
-                    -o-border-radius: 2.5rem; 
-                }
-
-                .text-container{
-                    h2{
-                        font-size: 2.5rem;
-                    }
-
-                    p{
-                        font-size: 1.6rem;
-                    }
-                }
-            }
-        }
-    }
-
-    .education-section,
-    .entertainment-section,
-    .business-section{
-        height: 40rem;
-        padding: 1rem 0;
-        .cards-container{
-            flex-wrap: wrap;
-            overflow-y: auto;
-            height: 100%;
-            .card{
-                width: 30%;
-
-                h2{
-                    font-size: 1.5rem;
-                }
-
-                p{
-                    font-size: 1.2rem;
-                }
-            }
-        }
-    }
- 
-    .audiobooks-section {
-        height: auto !important;
-        margin-bottom: 5rem !important;
-
-        .cards-container {
-            flex-direction: column;
-            overflow-x: hidden;
-            overflow-y: auto;
-            height: auto !important;
-            gap: 1rem;
-
-            .row1,.row2 {
-                flex-wrap: wrap;
-                width: 100%;
-                height: auto;
-                margin-bottom: 1rem;
-
-                .card {
-                    background: var(--white-color);
-                    width: 100% !important;
-                    height: auto;
-                    padding: .5rem;
-                    margin-bottom: 1rem;
-
-                    img {
-                        width: 25% !important;
-                        height: auto;
-                    }
-
-                    .text-container {
-                        width: 70% !important;
-
-                        h2 {
-                            font-size: 1.8rem !important;
-                        }
-
-                        p {
-                            width: 100% !important;
-                            font-size: 1.7rem !important;
-                            padding: 2rem 0;
-                        }
-
-                        ul{
-                            li {
-                                font-size: 1.6rem !important;
-                            }
-                        }
-                    }
-
-                    
-
-                    .fa-heart {
-                        font-size: 2rem !important;
-                        top: 1.5rem !important;
-                        right: 1.5rem !important;
-                    }
-                }
-            }
-        }
-    }
-
-    .aboutUs-section,.footer-section{
-        display: none;
     }
 
 
     /* welcomePage */
     .welcome-page{
-            .img{
+        .img{
             width: 100%;
-            
+            .btns{
+                .btn{
+                    span{
+                        font-size: 1.1rem;
+                    }
+                }
+            }
         }
     }
 
@@ -1170,17 +937,13 @@ span{
 
     .signUp-page,
     .log-in {
-        flex-direction: column;
-        .logo{
-            width: 100%;
-        }
-        .line {
-           height: 1rem;
-            width: 100%;
+        .logo,.line{
+            display: none;
         }
 
         .img{
             width: 100%;
+            height: 100%;
 
             h1{
                 font-size: 2.4rem;
@@ -1217,7 +980,6 @@ span{
                                 color: var(--main-color);
                                 font-size: 1.7rem;
                                 width: 100%;
-                                cursor: pointer;
                             }
                         }
                     }
