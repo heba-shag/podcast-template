@@ -17,6 +17,10 @@
     --white-color:#ffffff;
 }
 
+a{
+    text-decoration: none;
+}
+
 ::-webkit-scrollbar{
     display: none;
 }
@@ -93,7 +97,8 @@ span{
     }
 
     .search{
-        justify-content: space-between;
+        width: 30%;
+        justify-content: space-around;
         padding: 1rem;
         .icon{
             padding: .3rem;
@@ -125,6 +130,17 @@ span{
             color: var(--second-color);
             font-size: 1.3rem;
         }
+
+        img{
+            width: 5rem;
+            height: 5rem;
+            border: .2rem solid var(--main-color);
+            border-radius: 50%;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+}
 
     }
 }
@@ -1289,6 +1305,3 @@ span{
         }
     }
 }
-
-
-
