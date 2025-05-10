@@ -6,6 +6,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap">
 
+<!-- Add Slick Slider CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
     <link rel="stylesheet"  href="style.css">
     <title>Podacst</title>
 </head>
@@ -39,7 +42,7 @@
         <div class="home-section section">
     
             <div class="welcome-section flex">
-                <div class="flex description">
+                <div class="flex description active">
                     <div class="img">
                         <img src="media/9b30f2ea61a29ad6f18170d64f31f6136c8ca0cb.png" alt="">
                     </div>
@@ -59,21 +62,58 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="flex description ">
+                    <div class="img">
+                        <img src="media/13ee52bcd851ae74b7abf2cc415363dac71bc160.jpg" alt="">
+                    </div>
+    
+                    <div class="text-description">
+                        <h1>ALONE Experience</h1>
+    
+                        <p>Podcast Description
+                            <br>
+                        Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+                        </p>
+    
+                        <div class="list flex">
+                            <p>Educational</p>
+                            <p>Entertainment</p>
+                            <p>Slice of Live</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex description ">
+                    <div class="img">
+                        <img src="media/73a4e89e57aa99dc0fd08882597575401b3e192c.png" alt="">
+                    </div>
+    
+                    <div class="text-description">
+                        <h1>HERE Experience</h1>
+    
+                        <p>Podcast Description
+                            <br>
+                        Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+                        </p>
+    
+                        <div class="list flex">
+                            <p>Educational</p>
+                            <p>Entertainment</p>
+                            <p>Slice of Live</p>
+                        </div>
+                    </div>
+                </div>
                 
             </div>
     
             <div class="swiper-container flex">
                 <div class="swiper flex">
-                    <span style="color: #f65c2a">•</span>
-                    <span>•</span>
-                    <span>•</span>
-                    <span>•</span>
-                    <span>•</span>
-                    <span>•</span>
-                    <span>•</span>
+
+                    <span data-slide="0" class="active" >•</span>
+                    <span data-slide="1">•</span>
+                    <span data-slide="2">•</span>
                 </div>
-    
-                
             </div>
     
             <div class="quick-links-container flex">
@@ -82,6 +122,13 @@
                     <div class="link-container flex"><li class=" fas fa-book-open"></li><span>Audiobook</span></div>
                     <div class="link-container flex"><li class="fas fa-globe"></li><span>Network</span></div>
     
+                </div>
+            </div>
+
+            <div class="search-overlay">
+                <div class="search-box">
+                    <input type="text" placeholder="Search podcasts...">
+                    <button class="close-search"><i class="fas fa-times"></i></button>
                 </div>
             </div>
         </div>
@@ -93,7 +140,7 @@
                 <h3 class="more"><li class="fas fas fa-chevron-right"></li><span>More</span></h3>
             </div>
     
-            <div class="cards-container flex">
+            <div class="cards-container slick-slider flex">
                 <div class="card">
                     <img src="media/13ee52bcd851ae74b7abf2cc415363dac71bc160.jpg" alt="">
                     <h2>Not alone</h2>
@@ -156,7 +203,6 @@
             </div>
         </div>
     
-        <!-- top picks section -->
         <div class="top-picks-section section flex">
             <div class="header flex">
                 <h2 class="title">Top Picks</h2>
@@ -598,8 +644,10 @@
         </div>
     </div>
 
-    <div id="logIn">
         
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="script.js"></script>
     <!-- </div> -->
     
 </body>
